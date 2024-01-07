@@ -1,0 +1,124 @@
+@media only screen and (min-width : 1101px){
+    
+    html, body{
+    padding: 0px;
+    margin: 0px;
+    }
+    
+    #container{
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      grid-template-columns: 50vw 50vw;
+      grid-template-rows: 10vh 35vh 50vh 5vh;
+/*      min-height: 0;*/
+      
+/*      background-color: #d4e7cf;*/
+
+    }
+    
+    #top{
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+      
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 100%;
+
+    }
+    
+    #logo{
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+        
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    
+    #nav {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1; 
+    }
+    
+    #image{
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 1;
+      
+    }
+    
+  
+    
+    #albumRecords{
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+    
+      margin: 2%;
+      overflow-y: scroll;
+    
+    }
+    
+    #featuredAlbumsHTML{
+        float:right;
+        clear: left;
+        margin-top: 0.5em;
+        margin-right: 2.5em;
+        
+    }
+    
+    #albumsHTML, #albumsJSON{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+    
+    #albumsHTML table, #albumsJSON table{
+        width: 100%;
+        text-align: center;
+        table-layout: fixed;
+        border-collapse: collapse;
+        
+        
+    }
+
+
+    #albumRecords2022{
+      grid-column: 2 / span 1;
+      grid-row: 3 / span 1;
+        
+      margin: 2%;
+      overflow-y: scroll;
+    }
+    
+    #featuredAlbumsJSON{
+        float:right;
+        clear: left;
+        margin-top: 0.5em;
+        margin-right: 2.5em;
+    }
+    
+    tr:nth-child(even) {background-color: #fb8026;}
+    
+    footer{
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+        padding-top: 0%;
+        padding-bottom: 1.2%;
+        padding-left: 1%;
+
+    }
+    
+
+    footer img{
+        width: 2em;
+        float: right;
+        margin-left: 1%;
+        
+    }
+    
+
+}
